@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Default" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Guid>b994f4d9-f0ac-4bf0-b2d8-d8ac1e51cee4</Guid>
+    <Name>WOTC_Rusty_Alchemist_CXPurifierAddon</Name>
+    <Description>This mod contains a new loot table for the CX Purifier Revamp Captains that has a chance to drop the Black Chemthrower.
+
+This chemthrower will grant the Alchemist a few unique abilities for each tier of weapon dropped. 
+
+Conventional:Wide Attack
+Magnetic/Advanced: Wide Attack, Arc Cutter
+Beam/Superior:Wide Attack Directed Flame Attack, Arc Cutter
+
+These are rare item drops and cannot be built.</Description>
+    <SteamPublishID>0</SteamPublishID>
+    <AssemblyName>WOTC_Rusty_Alchemist_CXPurifierAddon</AssemblyName>
+    <RootNamespace>WOTC_Rusty_Alchemist_CXPurifierAddon</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Config\" />
+    <Folder Include="Localization\" />
+    <Folder Include="Content" />
+    <Folder Include="Src\" />
+    <Folder Include="Src\WOTC_Rusty_Alchemist_CXPurifierAddon" />
+    <Folder Include="Src\WOTC_Rusty_Alchemist_CXPurifierAddon\Classes" />
+    <Folder Include="Src\WOTC_Rusty_Alchemist_CXPurifierAddon\" />
+    <Folder Include="Src\WOTC_Rusty_Alchemist_CXPurifierAddon\Classes\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Config\XcomFLAMEData.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\XComGameCore.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\XComLW_SoldierSkills.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\XComMZChemthrower.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\XComNiceWeaponFixes.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\XComPGOverhaulExperimentalItems.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\XComXenolator.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\XComWeaponSkinReplacer.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\XComInfiltration.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Content\UILibrary_RustyXenolator.upk">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Content\UI_ImmolatorUpgrades.upk">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Content\WP_XCOMChemthrowerMKII.upk">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ReadMe.txt" />
+    <Content Include="ModPreview.jpg" />
+    <Content Include="Config\XComEditor.ini" />
+    <Content Include="Config\XComEngine.ini" />
+    <Content Include="Config\XComGame.ini" />
+    <Content Include="Localization\XComGame.int" />
+    <Content Include="Src\WOTC_Rusty_Alchemist_CXPurifierAddon\Classes\AnimNotify_TriggerHitReaction_Xenolators.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\WOTC_Rusty_Alchemist_CXPurifierAddon\Classes\X2Ability_Xenolator.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\WOTC_Rusty_Alchemist_CXPurifierAddon\Classes\X2Action_Fire_Firestorm.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\WOTC_Rusty_Alchemist_CXPurifierAddon\Classes\X2Condition_FineControl.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\WOTC_Rusty_Alchemist_CXPurifierAddon\Classes\X2Effect_ApplyAcidToWorld_Cone.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\WOTC_Rusty_Alchemist_CXPurifierAddon\Classes\X2Item_XCOM_Xenolator.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\WOTC_Rusty_Alchemist_CXPurifierAddon\Classes\X2DownloadableContentInfo_WOTC_Rusty_Alchemist_CXPurifierAddon.uc" />
+    <Content Include="Src\WOTC_Rusty_Alchemist_CXPurifierAddon\Classes\X2StrategyElements_RandomExpChems.uc">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildLocalExtensionPath)\XCOM2.targets" />
+</Project>
